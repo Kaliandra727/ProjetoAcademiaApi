@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+      <script src="../js/loginaluno.js" ></script>
+    </head>
+    
+    <body>
+       
+        <div class="container-fluid bg-secondary">
+            <div class="jumbotron bg-dark text-green">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="http://cms.psgtecnologia.com.br/uploads/logo_psg_branca_fb6edd3b65.svg" class="mx-auto d-block" width="180" height="60">                             
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <ul class="navbar-nav">                    
+                            
+                            <li class="nav-item dropdown">
+                                <button type="login" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+                                    Login
+                                  </button>
+                                  <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h4 class="modal-title" >Login</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>    
+                                        <div class="modal-body">                                      
+                                            <form class="needs-validation" novalidate>
+                                              <div class="form-group">
+                                                <label for="eml">Email:</label>
+                                                <input type="email" class="form-control" id="eml" placeholder="E-mail" name="eml" required>
+                                                <div class="valid-feedback">Valido.</div>
+                                                <div class="invalid-feedback">Campo não pode ser vazio.</div>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="pwd">Senha:</label>
+                                                <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pwd" required>
+                                                <div class="valid-feedback">Valido.</div>
+                                                <div class="invalid-feedback">Campo não pode ser vazio.</div>
+                                              </div>
+                                             <br>
+                                             <br>
+                                              <button class="btn btn-success" id="btnConfirmar">Confirmar</button>
+                                              
+
+                                              <div class="modal-footer">
+                                                <a href="../testes/admlogin.html">
+                                                  <button  type="button" class="btn btn-dark">ADM</button>
+                                                </a>
+                                                
+                                              </div>                                       
+                                            </form>
+                                          </div>
+                                          <script>
+                                          (function() {
+                                            'use strict';
+                                            window.addEventListener('load', function() {
+                                              var forms = document.getElementsByClassName('needs-validation');
+                                              var validation = Array.prototype.filter.call(forms, function(form) {
+                                                form.addEventListener('submit', function(event) {
+                                                  if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                  }
+                                                  form.classList.add('was-validated');
+                                                }, false);
+                                              });
+                                            }, false);
+                                          })();
+                                          </script>
+                                        </div>                                         
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                        </div>                                       
+                                      </div>
+                                    </div>
+                              </li>                                                                                                        
+                            
+                              
+                              <ul class="navbar-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link , btn btn-dark" href="../testes/cadastro.html">Cadastro</a>
+                              </li>      
+                          </ul>
+                    </div>  
+               </nav>
+            <br/>
+
+
+            <div class="container text-white">
+                <div class="jumbotron bg-dark">
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <img src="http://psgtecnologia.com.br/_next/image?url=%2Fimages%2Fmissao-icon.svg&w=96&q=75" class="mx-auto d-block" width="80" height="80">
+                        <br />
+                        <br />
+                        <h3 class="text-center">Missão</h3>
+                        <p class="text-justify">Ser referência em ensino de superioridade, fornecer atendimento com qualidade
+                            e excelência buscando ser líder em seu seguimento de atuação.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="http://psgtecnologia.com.br/_next/image?url=%2Fimages%2Fvalores-icon.svg&w=96&q=75" class="mx-auto d-block" width="80" height="80">
+                        <br />
+                        <br />
+                        <h3 class="text-center">Inscrições Abertas</h3>        
+                        <p class="text-justify">
+                          Escolha o seu curso e venha estudar com os melhores instrutores e 100% de metodologia integradoras.
+                          <br>
+                          <br>                                                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="jumbotron bg-dark text-center" style="margin-bottom:0" >
+              <div class="row">
+                 <div class="col-sm-2 pad-1">
+                   <img src="http://cms.psgtecnologia.com.br/uploads/logo_psg_branca_fb6edd3b65.svg" class="float-left" width="120" height="120">
+                 </div>
+              <div class="col-sm-4 p-1 ">
+                  <p style="color:darkcyan;">R: Av. Coronel Antonino N. 1558 - Bairro: Coronel Antonino</p>
+                  <p style="color:darkcyan ;">CEP 79010-001 • Campo Grande/MS</p>
+              </div>
+              <div class="col-sm-2"></div>
+           </div>
+           
+          </div>
+        </div>
+    </body>
+</html>
