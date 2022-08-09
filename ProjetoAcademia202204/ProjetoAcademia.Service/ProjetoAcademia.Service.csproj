@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoAcademia.Mapper\ProjetoAcademia.Mapper.csproj" />
+    <ProjectReference Include="..\ProjetoAcademia.Poco\ProjetoAcademia.Poco.csproj" />
+    <ProjectReference Include="..\ProjetoAcademia.Repository\ProjetoAcademia.Repository.csproj" />
+    <ProjectReference Include="..\ProjetoAcademia.Envelope\ProjetoAcademia.Envelope.csproj" />
+    <ProjectReference Include="..\ProjetoAcademia.EF\ProjetoAcademia.EF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

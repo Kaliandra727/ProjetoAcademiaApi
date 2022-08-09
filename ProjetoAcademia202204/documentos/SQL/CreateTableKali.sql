@@ -1,0 +1,35 @@
+CREATE TABLE CursosPorTurma(
+	IdCursoTurma INT NOT NULL IDENTITY(1,1),
+	IdTurma INT NOT NULL,
+	IdCurso INT NOT NULL,
+	Situacao BIT NULL DEFAULT 1,
+	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+	DataAlteracao DATETIME NULL,
+	DataExclusao DATETIME NULL,
+	CONSTRAINT PKIdCursoTurma PRIMARY KEY (IdCursoTurma)
+)
+GO
+
+CREATE TABLE AlunosPorTurma(
+	IdAlunoTurma INT NOT NULL IDENTITY(1,1),
+	IdTurma INT NOT NULL,
+	IdAluno INT NOT NULL,
+	Situacao BIT NULL DEFAULT 1,
+	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+	DataAlteracao DATETIME NULL,
+	DataExclusao DATETIME NULL,
+	CONSTRAINT PKIdAlunoTurma PRIMARY KEY (IdAlunoTurma)	
+)
+GO
+
+CREATE TABLE InstrutoresPorTurma(
+	IdInstrutorTurma INT NOT NULL IDENTITY(1,1),
+	IdTurma INT NOT NULL,
+	IdInstrutor INT NOT NULL,
+	Situacao BIT NULL DEFAULT 1,
+	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+	DataAlteracao DATETIME NULL,
+	DataExclusao DATETIME NULL,
+	CONSTRAINT PKIdInstrutorTurma PRIMARY KEY (IdInstrutorTurma)	
+)
+GO
